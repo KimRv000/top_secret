@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">
+    <title>Top Secret</title>
+</head>
+
+<body>
+    <main>
+        <header>Top secret</header>
+        <section class="mainContainer" id="mainContainer">
+            <section class="input-container">
+                <input class="input-text" type="text" autocomplete="off" placeholder="Type your message... (lowercase letters and no accents)" id="inputText"></input>
+                <article class="buttons-container">
+                    <button class="button-encode" id="encodeButton">Encode</button>
+                    <button class="button-decode" id="decodeButton">Decode</button>
+                </article>
+            </section>
+            <section class="output-container" id="outputContainer" >
+                <article class="output-text" id="outputText"></article>
+                <button class="button-copy" id="copyButton">Copy</button>
+            </section>
+        </section>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
