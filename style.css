@@ -10,13 +10,13 @@
 }
 
 body {
-    background-color: #BE9C78;
+    background-color: #151515;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    background-color: #BE9C78;
+    background-color: #151515;
     justify-content: center;
     align-items: center;
 }
@@ -27,7 +27,7 @@ header {
     width: 100%;
     height: 20%;
     font-family: "Keania One", sans-serif;
-    color: #CB0001;
+    color: #b81e1e;
     font-size: 500%;
     padding: 1%;
 }
@@ -35,10 +35,10 @@ header {
 .mainContainer {
     display: flex;
     flex-wrap: wrap;
-    background-color: #C1B09F;
+    background-color: grey;
     width: 100%;
     height: 700px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
 }
@@ -46,19 +46,20 @@ header {
 .input-container {
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
-    width: 50%;
+    background-color: grey;
+    width: 30%;
     height: 80%;
     border-radius: 15px;
     margin: 5px;
     align-items: center;
     padding: 25px;
-    box-shadow: #877b70 5px 5px 5px;
+    box-shadow: #464646 5px 5px 15px;
 
 }
 
 .input-container:hover {
-    box-shadow: #877b70 5px 5px 15px;
+    opacity: 60%;
+    background-color: #d7d7d7;
 }
 
 .output-container {
@@ -70,12 +71,14 @@ header {
     margin: 5px;
     align-items: center;
     padding: 25px;
-    background-color: #C1B09F;
+    background-color: grey;
     visibility: hidden;
 }
 
 .output-container:hover {
-    box-shadow: #877b70 5px 5px 15px;
+    box-shadow: #464646 5px 5px 15px;
+    opacity: 60%;
+
 }
 
 .input-text {
@@ -85,21 +88,17 @@ header {
     text-align: center;
     font-size: x-large;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: transparent;
     color: #3b3b3b;
+    outline: none;
+
 }
 
 ::placeholder {
-    color: #ad9e8f;
-    font-size: 1.5em;
+    color: #3b3b3b;
+    font-size: large;
   }
 
-.input-text:focus {
-    outline: none;
-    box-shadow: #877b70 2px 2px 5px;
-    color: #3b3b3b;
-    
-}
 
 .output-text {
     display: flex;
@@ -108,7 +107,7 @@ header {
     padding: 15px;
     text-align: center;
     font-size: x-large;
-    background-color: #C1B09F;
+    background-color: grey;
     color: #3b3b3b;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
@@ -119,6 +118,14 @@ header {
     outline: none;
 }
 
+.input-instructions {
+    color: #b81e1e;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: flex-start;
+    visibility: visible;
+}
+
 .buttons-container {
     display: flex;
     width: 50%;
@@ -127,51 +134,79 @@ header {
 }
 
 .button-encode {
-    width: 110px;
-    height: 35px;
-    border-radius: 10px;
-    font-size: x-large;
+    width: auto;
+    height: auto;
+    border-radius: 40px;
+    padding: 10px;
+    font-size: large;
     cursor: pointer;
-    background-color: #C1B09F;
-    color: #ad9e8f;
+    background-color: transparent;
+    color: #5b5b5b;
+    visibility: visible;
 }
 
 .button-encode:hover {
-    transform: scale(1.2);
-    background-color: #A17343;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    background-color: #000000;
 
 }
 
 .button-decode {
-    width: 110px;
-    height: 35px;
-    border-radius: 10px;
-    font-size: x-large;
+    width: auto;
+    height: auto;
+    border-radius: 40px;
+    padding: 10px;
+    font-size: large;
     cursor: pointer;
-    background-color: #C1B09F;
-    color: #ad9e8f;
+    background-color: transparent;
+    color: #5b5b5b;
+    visibility: visible;
 }
 
 .button-decode:hover {
-    transform: scale(1.2);
-    background-color: #A17343;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    background-color: #000000;
 }
 
 .button-copy {
-    width: 110px;
-    height: 35px;
-    border-radius: 10px;
-    background-color: #C1B09F;
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+    background-color: transparent;
     font-size: x-large;
     cursor: pointer;
     margin-top: 20px;
     visibility: hidden;
-    color: #ad9e8f;
+    color: #5b5b5b;
+    padding: 2px;
+    align-self: flex-end;
 
 }
 
 .button-copy:hover {
     transform: scale(1.2);
-    background-color: #A17343;
+    transition: transform 0.3s ease;
+    background-color: #000000;
+
+}
+
+.button-delete {
+    width: auto;
+    height: auto;
+    border-radius: 100%;
+    background-color: transparent;
+    font-size: x-large;
+    cursor: pointer;
+    color: #5b5b5b;
+    padding: 2px;
+    visibility: hidden; 
+}
+
+.button-delete:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    background-color: #000000;
 
 }
